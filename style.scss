@@ -1,0 +1,152 @@
+$first-color: white;
+$second-color: black;
+$accent-color: rgb(42, 0, 70);
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.bold {
+  font-weight: 700;
+  color: $accent-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+.heading {
+  font-size: 3rem;
+  color: $accent-color;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.header {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  width: calc(100% - 20px);
+  box-shadow: 0px 1px 9px;
+
+  &__logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.menu {
+  &__item {
+    color: $second-color;
+    margin: 0 15px;
+    transition: 0.5s;
+
+    &--active {
+      color: $accent-color;
+    }
+  }
+
+  &__item:hover {
+    color: $accent-color;
+  }
+}
+
+.main-content {
+  padding-top: 140px;
+  background-color: $first-color;
+  color: $second-color;
+  min-height: calc(100vh - 190px);
+}
+
+.hero {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    width: 70%;
+  }
+
+  &__image-holder {
+    width: 30%;
+    margin: 20px;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 30% 1%;
+  }
+}
+
+.cta {
+  margin: 30px 0;
+
+  &__button {
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: $second-color;
+    padding: 20px;
+    margin: 0px auto;
+    border: 1px solid black;
+    transition: 0.5s;
+  }
+
+  &__button:hover {
+    background-color: $accent-color;
+    color: $first-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.specifics {
+  display: block;
+  width: 90%;
+  margin: auto;
+
+  &__list {
+    list-style-type: "- ";
+
+    &--no-list-style {
+      list-style: none;
+    }
+  }
+}
+
+.google-calendar {
+  display: block;
+  margin: auto;
+}
+
+.footer {
+  box-shadow: 0px 1px 9px;
+  padding: 5px;
+  font-size: 0.8em;
+}
+
+.copyright {
+  display: block;
+  margin: 0 auto;
+  width: 270px;
+  text-align: center;
+
+  &__link {
+    color: $second-color;
+    transition: 0.5s;
+  }
+
+  &__link:hover {
+    color: $accent-color;
+  }
+}
